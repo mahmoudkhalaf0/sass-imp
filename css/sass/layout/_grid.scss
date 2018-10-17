@@ -1,0 +1,30 @@
+*{
+    @include prefixer(box-sizing,border-box,webkit moz);
+}
+.container{
+    width: 992px;
+    margin: auto;
+    padding-left: 15px;
+    position: relative;
+    padding-right: 15px;
+    @media #{$max-mobile} {
+        width:550px;
+    }
+    @media #{$min-small} {
+        width:750px;
+    }
+    @media #{$min-medium} {
+        width: 970px;
+    }
+    @media #{$min-large} {
+        width:1170px;
+    }
+}
+.clear-fix{
+    clear: both;
+}
+.tc-xs{
+    @media #{$max-mobile} {
+        text-align: center;
+    }
+}

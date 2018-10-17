@@ -1,0 +1,78 @@
+.header{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: 1px solid $secondcolor;
+    overflow: hidden;
+    position: relative;
+    .logo{
+        width: 30%;
+        float: $floatleft;
+        @media #{$max-mobile} {
+            width: 50%;
+            float: $floatleft
+        }
+        @media #{$min-small} {
+            width: 100%;
+            text-align: center;
+        }
+        @media #{$min-medium} {
+            width: 30%;
+            font: $floatleft;
+            text-align-last: $text-left;
+        }
+        h1{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+   
+    .navbar{
+        width: 70%;
+        float: $floatleft;
+        background-color: $maincolor;
+        border-radius: 12px;
+        margin-top: 3px;
+        overflow: hidden;
+        @media #{$max-mobile} {
+            display: none;
+            border-radius: 0;
+            width: 100%;
+
+        }
+        @media #{$min-small} {
+            width: 100%;
+            text-align: center;
+            display: block !important;
+        }
+        @media #{$min-medium} {
+            width: 70%;
+            float:$floatleft;
+        }
+            li{
+            width: 20%;
+            float:$floatleft;
+            font-size: 16px;
+            text-align: center;
+            @media #{$max-mobile} {
+                width: 100%;
+                float: none;
+                display: block;              
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                padding: 20px 0 10px 0;
+                @media #{$max-mobile} {
+                    padding: 10px 0;
+                }
+                &:hover{
+                    color:#ddd;
+                }
+            }
+          
+        }
+    }
+}

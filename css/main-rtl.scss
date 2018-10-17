@@ -1,0 +1,146 @@
+@import 'sass/helpers/variable';
+@import 'sass/component/button';
+
+$floatleft:right;
+$floatright:left;
+$text-left:right;
+$text-right:left;
+.header{
+    .logo{
+        float: $floatleft;
+        @media #{$max-mobile} {
+            float: $floatleft
+        }
+        @media #{$min-medium} {
+            font: $floatleft;
+            text-align-last: $text-left;
+        }
+    }
+   
+    .navbar{
+        float: $floatleft;
+        @media #{$min-medium} {
+            float:$floatleft;
+        }
+            li{
+            float:$floatleft;
+        }
+    }
+}
+
+/*start slider*/
+.slider{
+    q{
+        text-align: center;
+        display: block;
+        padding: 50px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .one-time{
+        margin: auto;
+        text-align:center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        ul{
+            border:1px solid $maincolor;
+            background-color: #000;
+            
+            li{
+                display: inline-block;
+                background-color:$maincolor;
+                margin: 15px 10px;
+                width: 25px;
+                height: 10px;
+                border:1px solid #fff;
+                cursor: pointer;
+                &.slick-active,&:hover{
+                background-color: #fff;
+                border-color: $maincolor;
+                }   
+                button{
+                    width: 0px;
+                    height: 0px;
+                    font-size: 0px;
+                    border: none;
+                    margin: 0;
+                    outline: none; 
+                    background-color:transparent;
+                }
+            }
+        }
+    }
+}
+/*end slider*/
+
+/*start services*/
+.services{
+       .service-box{
+        float: $floatleft;
+        
+        @media #{$min-medium} {
+            float: $floatleft;
+        }
+    }
+}
+/*end services*/
+
+/*start player*/
+.players{
+    .player-box{
+        float: $floatleft;
+    }
+}
+        
+/*end players*/
+/*start lorem*/
+.lorem{
+    .lorem-box{
+        float: $floatleft;
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-left: 2%;
+        }
+    }
+}
+/*end lorem*/
+
+/*start copy*/
+.copy{
+   
+    .right{
+        float: $floatleft;
+        text-align: $text-left;
+    }
+    .design{
+        float: $floatleft;
+        text-align: $text-right;
+    }
+}
+
+.footer{
+    .gallery,.info,.contact{
+        float: $floatleft;
+    }
+    .gallery{
+        padding-right: 0;
+        padding-left: 20px;
+        .footer-box{
+            .imgg{
+                float: $floatleft;  
+                margin-right: 0;
+                margin-left: 20px; 
+            }
+        }
+    }
+    .info{
+        padding-right: 0;
+        padding-left: 15px;
+    }
+}
+.toggler{
+    right: 450px;
+    top: 11px;
+}
